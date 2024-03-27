@@ -64,10 +64,9 @@ h1 {
 #video-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0 10px 10px;
-  gap: 20px;
   width: 100%;
   max-width: 500px;
 }
@@ -78,21 +77,12 @@ iframe {
   border: 5px solid white;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 5px 5px;
 }
 
 #banner-header img {
     width: 100%;
     display: block;
-}
-
-.md {
-  padding: 50px 15px 15px;
-  font-size: 56px;
-}
-
-.lg {
-  padding: 50px 15px 15px;
-  font-size: 36px;
 }
 
 div:has(> select) {
@@ -180,15 +170,6 @@ div:has(> iframe) {
     font-size: 64px;
   }
 
-  .md {
-    font-size: 80px;
-  }
-
-  .lg {
-    padding: 50px 30px 15px;
-    font-size: 54px;
-  }
-
   #video-container {
     padding: 0px;
   }
@@ -216,14 +197,9 @@ div:has(> iframe) {
     font-size: 90px;
   }
 
-  .lg {
-    font-size: 76px;
-  }
-
   #video-container {
     justify-content: center;
     max-width: 700px;
-    gap: 20px 10px;
   }
 
   iframe {
@@ -239,11 +215,6 @@ div:has(> iframe) {
     max-width: 1200px;
     padding: 50px 15px 15px;
     font-size: 90px;
-  }
-
-  .lg {
-    padding: 50px 50px 15px;
-    font-size: 82px;
   }
 
   #video-container {
@@ -269,21 +240,10 @@ div:has(> iframe) {
     padding: 50px 15px 15px;
     font-size: 130px;
   }
-  
-  .md {
-    padding: 80px 200px 15px;
-    font-size: 120px;
-  }
-
-  .lg {
-    padding: 50px 200px 15px;
-    font-size: 96px;
-  }
 
   #video-container {
     padding: 0px;
     max-width: 1100px;
-    gap: 30px;
   }
 
   iframe {
@@ -300,7 +260,6 @@ div:has(> iframe) {
 
   #video-container {
     max-width: 1300px;
-    gap: 60px 80px;
   }
 
   iframe {
