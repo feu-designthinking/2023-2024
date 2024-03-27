@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DST24 Tech: Zero Hunger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href = "style-sdg.css" type = "text/css">
+  </head>
+
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobil.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <div>
+        <h1 style = "color:rgb(211, 160, 42)">Zero Hunger</h1>
+      </div>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script>
+  <script src = "script-sdg.js"></script>
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL watch?v format]);
+
+      // Deleting Videos
+      // Just remove the line
+
+      newVideo("ResQMeal",  "https://www.youtube.com/watch?v=atkot-bb6xg",  "TN26");
+      newVideo("Farmilihan",  "https://www.youtube.com/watch?v=beghNzrVWM8",  "TN26");
+      newVideo("Grasya Worldwide",  "https://www.youtube.com/watch?v=zy7QPH0MPJ4",  "TS21");
+      newVideo("SYNERGY",  "https://www.youtube.com/watch?v=fe0FE2X3B50",  "TW24");
+      newVideo("Sleepy Boys",  "https://www.youtube.com/watch?v=W-KoSGW97es",  "TW21");
+      newVideo("Green Rewards",  "https://www.youtube.com/watch?v=csD-fzIV3_A",  "TW24");
+
+      applyHover();
+    }
+  </script>
+</html>

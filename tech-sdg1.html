@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DST24 Tech: No Poverty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href = "style-sdg.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobil.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <div>
+        <h1 style = "color:rgb(216, 29, 29);">No Poverty</h1>
+      </div>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script>
+  <script src = "script-sdg.js"></script>
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL]);
+
+      // Deleting Videos
+      // Just remove the line
+      newVideo("Commart", "https://www.youtube.com/watch?v=Cf0HW49HUtI", "TN29");
+      newVideo("Plump Peach", "https://www.youtube.com/watch?v=XZriL6fb0Xo", "TD22");
+      newVideo("Blue Wave Studios", "https://www.youtube.com/watch?v=7t9Nu6DQVjQ", "TD24");
+      newVideo("creatífs", "https://www.youtube.com/watch?v=BOD6W3F4oeo", "TD25");
+      newVideo("OTSO", "https://www.youtube.com/watch?v=1BXq44MRRMc", "TW21");
+      
+      applyHover();
+    }
+  </script>
+</html>

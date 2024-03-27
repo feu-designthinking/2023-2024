@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap");
+
+:root {
+    --green: #5a791a;
+}
+
+body {
+    background-color: #58ab99;
+    min-width: 1280px;
+    min-height: 1024px;
+}
+
+#city-map {
+    background: url(img/city-map.jpg);
+    width: 1280px;
+    height: 1024px;
+    position: relative;
+}
+
+#city-map > div {
+    position: absolute;
+}
+
+#city-map > div:hover {
+    transform: scale(105%);
+    z-index: 1000;
+}
+
+#city-map > div * {
+    cursor: pointer;
+}
+
+#city-map img {
+    width: 100%;
+}
+
+#city-map .overlay {
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    transform: translate(-50%, 0%);
+    transition-duration: 0.3s;
+}
+
+#city-map .pin {
+    opacity: 100;
+    width: 50px;
+    height: 69.3px;
+    background-size: contain;
+}
+
+#city-map > div:hover .pin {
+    opacity: 0;
+    transform: translate(-50%, 100%);
+}
+
+#city-map .txt {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbdb37;
+    border: 5px solid var(--green);
+    border-radius: 15px;
+    color: var(--green);
+    font-family: "Bebas Neue", cursive;
+    font-weight: 800;
+    text-align: center;
+    line-height: 0.85;
+    font-size: 32px;
+    letter-spacing: 2px;
+    padding: 7px 5px 5px;
+    width: 0;
+    height: 55px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transform: translate(-50%, 10%);
+}
+
+#city-map > div:hover .txt {
+    opacity: 100;
+    width: 264px;
+}

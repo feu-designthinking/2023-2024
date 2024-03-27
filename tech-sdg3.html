@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DST24 Tech: Good Health and Well-being</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href = "style-sdg.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <div>
+        <h1 class="md" style = "color:rgb(40, 155, 72)">Good Health and Well-being</h1>
+      </div>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script>
+  <script src = "script-sdg.js"></script>
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL]);
+
+      // Deleting Videos
+      // Just remove the line
+      newVideo("V of Spades",  "https://www.youtube.com/watch?v=SjE0PZdKaGs",  "TW22");
+      newVideo("Heartthrobs",  "https://www.youtube.com/watch?v=h-VnA0oRB8A",  "TW22");
+      newVideo("Paupuff boys",  "https://www.youtube.com/watch?v=7gMvJ-93U-8",  "TW22");
+      newVideo("Kangkong Jeep",  "https://www.youtube.com/watch?v=h0kXxy45HBQ",  "TW22");
+      newVideo("Nomis Geng",  "https://www.youtube.com/watch?v=Gapehi1Ph_M",  "TN21");
+      newVideo("BAJAJA",  "https://www.youtube.com/watch?v=bKyzoqEzZX0",  "TN21");
+      newVideo("Teambol",  "https://www.youtube.com/watch?v=KVDdaYk_sBE",  "TN21");
+      newVideo("SSS",  "https://www.youtube.com/watch?v=dEKzIJvGQCk",  "TN23");
+      newVideo("Design Tinkers",  "https://www.youtube.com/watch?v=Yw3nfRAkS1Y",  "TN23");
+      newVideo("Tres Perro",  "https://www.youtube.com/watch?v=-xeqtXcliPs",  "TN23");
+      newVideo("ABRA",  "https://www.youtube.com/watch?v=RGVrqI7Gv30",  "TN25");
+      newVideo("apex preds",  "https://www.youtube.com/watch?v=ZYcXPPOIFPg",  "TN25");
+      newVideo("Teambol",  "https://www.youtube.com/watch?v=hBV7yDtk1mY",  "TN25");
+      newVideo("WAV",  "https://www.youtube.com/watch?v=HR3jNZYa8bQ",  "TN26");
+      newVideo("The Officials",  "https://www.youtube.com/watch?v=7chJLGONcCo",  "TS21");
+      newVideo("Bussin Blue",  "https://www.youtube.com/watch?v=oktZMOzi8G4",  "TD21");
+      newVideo("Prismatic Pink",  "https://www.youtube.com/watch?v=yEYl52OY9wE",  "TD22");
+      newVideo("Royal Red",  "https://www.youtube.com/watch?v=h-w0tBlmqfw",  "TD22");
+      newVideo("Amazing Aquamarine",  "https://www.youtube.com/watch?v=ZwVOSV_v5ts",  "TD22");
+      newVideo("Mga Ampon",  "https://www.youtube.com/watch?v=Uu8zA-himDU",  "TD24");
+      newVideo("z",  "https://www.youtube.com/watch?v=B4EYPMESdwU",  "TW23");
+      newVideo("PSG",  "https://www.youtube.com/watch?v=6mA7EuL4c8U",  "TW23");
+      newVideo("Anita",  "https://www.youtube.com/watch?v=dvjdM5mLWnE",  "TW23");
+      newVideo("Gullet",  "https://www.youtube.com/watch?v=xMGyBRQORSY",  "TW23");
+      newVideo("Heti",  "https://www.youtube.com/watch?v=JY8Avg9sFIA",  "TW23");
+      newVideo("BigBoyz",  "https://www.youtube.com/watch?v=6mmexsOG9EQ",  "TW24");
+      newVideo("Troy Kingdom",  "https://www.youtube.com/watch?v=0d8EMkC4taE",  "TW24");
+
+      applyHover();
+
+      award("7chJLGONcCo", medals.presenter);
+      award("7chJLGONcCo", medals.info);
+      award('hBV7yDtk1mY', medals.poster);
+
+    }
+  </script>
+</html>

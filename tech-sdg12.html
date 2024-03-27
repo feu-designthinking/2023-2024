@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DST24 Tech: Responsible Consumption and Production </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href = "style-sdg.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobil.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <div>
+        <h1 class="lg" style = "color:#BD933D">Responsible Consumption <br> and Production</h1>
+      </div>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script>
+  <script src = "script-sdg.js"></script>
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL]);
+
+      // Deleting Videos
+      // Just remove the line
+
+      newVideo("Group 1",  "https://www.youtube.com/watch?v=WdgaIj1GadU",  "TN21");
+      newVideo("Garbit",  "https://www.youtube.com/watch?v=IDWC-TbjaB8",  "TN23");
+      newVideo("TOC",  "https://www.youtube.com/watch?v=tpJvMYZcRYU",  "TN25");
+      newVideo("Cellect Technologies",  "https://www.youtube.com/watch?v=nTliR9AhcPc",  "TN26");
+      newVideo("Charming Chartreuse",  "https://www.youtube.com/watch?v=nRYQlN63W2Y",  "TD22");
+      newVideo("Lumpiang Shanghai",  "https://www.youtube.com/watch?v=qf9rpb9u8lY",  "TD24");
+      newVideo("Pro",  "https://www.youtube.com/watch?v=SSgF1MX5_q4",  "TW23");
+      newVideo("Euphonyka",  "https://www.youtube.com/watch?v=wUsksyD3d9g",  "TW24");
+      newVideo("YASMINESE",  "https://www.youtube.com/watch?v=wZMOhtVksFM",  "TW24");
+      newVideo("F4",  "https://www.youtube.com/watch?v=tjVwjeuYK1s",  "TW21");
+            
+      award('WdgaIj1GadU', medals.elim);
+      award('nTliR9AhcPc', medals.first);
+
+      applyHover();
+    }
+  </script>
+  <style>
+    h1, .lg {    
+      font-size: 32px;
+    }
+
+    @media only screen and (min-width: 576px) {
+      h1, .lg {    
+        font-size: 48px;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      h1, .lg {    
+        font-size: 64px;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      h1, .lg {
+        font-size: 82px;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      h1, .lg {
+        font-size: 86px;
+      }
+    }
+
+    @media only screen and (min-width: 1400px) {
+      .lg {    
+        font-size: 94px;
+      }
+    }
+  </style>
+</html>

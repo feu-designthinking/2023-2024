@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DST24 Tech: Quality Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href = "style-sdg.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobil.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <div>
+        <h1 style = "color:rgb(173, 47, 52)">Quality Education</h1>
+      </div>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script>
+  <script src = "script-sdg.js"></script>
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL]);
+
+      // Deleting Videos
+      // Just remove the line
+
+      newVideo("TAMBIS",  "https://www.youtube.com/watch?v=OAW2PHfHt7E",  "TW22");
+      newVideo("Besties",  "https://www.youtube.com/watch?v=Ea2XlEsnseQ",  "TW22");
+      newVideo("50/50",  "https://www.youtube.com/watch?v=N722etHpu2g",  "TN21");
+      newVideo("Gubisoft",  "https://www.youtube.com/watch?v=QyGu4c-J5SE",  "TN25");
+      newVideo("Group ni Cadaing",  "https://www.youtube.com/watch?v=bXrSB3aIejg",  "TN29");
+      newVideo("Void",  "https://www.youtube.com/watch?v=1GMp8nCets8",  "TS21");
+      newVideo("Chaotic Crimsons",  "https://www.youtube.com/watch?v=3K_PD7OnjUg",  "TD21");
+      newVideo("Macabre Maroon",  "https://www.youtube.com/watch?v=dPz9gvHDbus",  "TD21");
+      newVideo("Blaky 2.0",  "https://www.youtube.com/watch?v=9GYLwR_W1AE",  "TD24");
+      newVideo("ThinkTok",  "https://www.youtube.com/watch?v=A-K8RvEredg",  "TD25");
+      newVideo("SECC",  "https://www.youtube.com/watch?v=_vn_5-dQq_Y",  "TW24");
+      newVideo("DIOR",  "https://www.youtube.com/watch?v=nRXx5e2135U",  "TW21");
+
+      applyHover();
+    }
+  </script>
+</html>

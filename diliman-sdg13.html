@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DST24 Diliman: Climate Change Action</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href = "style-sdg.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobil.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <div>
+        <h1 style = "color:rgb(71, 119, 61)">Climate Change Action</h1>
+      </div>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script>
+  <script src = "script-sdg.js"></script>
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL]);
+
+      // Deleting Videos
+      // Just remove the line
+      newVideo("LIGTAS By EcoShift", "https://www.youtube.com/watch?v=QP_KwT0d1xs", "DW21");
+      newVideo("AIRSHROOM by SAMPLE TEXT", "https://www.youtube.com/watch?v=IYhgCBBK16o", "DX21");
+
+      award('IYhgCBBK16o', medals.elim);
+      award('QP_KwT0d1xs', medals.champ);
+      award('QP_KwT0d1xs', medals.info);
+      award('QP_KwT0d1xs', medals.presenter);
+
+      applyHover();
+    }
+  </script>
+</html>

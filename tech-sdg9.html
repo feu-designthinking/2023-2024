@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DST24 Tech: Industry, Innovation and Infrastructure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href = "style-sdg.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobil.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <div>
+        <h1 class="lg" style = "color:rgb(243, 109, 36)">Industry, Innovation and Infrastructure</h1>
+      </div>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script>
+  <script src = "script-sdg.js"></script>
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL]);
+
+      // Deleting Videos
+      // Just remove the line
+
+      newVideo("Valerio's Angels",  "https://www.youtube.com/watch?v=WTJMOejBYlM",  "TW22");
+      newVideo("Bev Abi",  "https://www.youtube.com/watch?v=YCgHfjetK5I",  "TW22");
+      newVideo("RoadReport",  "https://www.youtube.com/watch?v=QIimIDNKiXI",  "TN23");
+      newVideo("DNJC",  "https://www.youtube.com/watch?v=BW06Mpa42XE",  "TN23");
+      newVideo("DXT",  "https://www.youtube.com/watch?v=LMfAfG6I9Cs",  "TN25");
+      newVideo("Team Impala6",  "https://www.youtube.com/watch?v=eY4kWpq8OYQ",  "TN28");
+      newVideo("Codex",  "https://www.youtube.com/watch?v=cuzTnYWjsFk",  "TS21");
+      newVideo("The Finals",  "https://www.youtube.com/watch?v=hT5i6JQNNNQ",  "TS21");
+      newVideo("Barbaric Brown",  "https://www.youtube.com/watch?v=PxjMsg4O4nk",  "TD21");
+
+      award('eY4kWpq8OYQ', medals.elim);
+
+      applyHover();
+    }
+  </script>
+</html>

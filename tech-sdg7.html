@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DST24 Tech: Affordable & Clean Energy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href = "style-sdg.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobil.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <div>
+        <h1 class="md" style = "color:rgb(248, 194, 36)">Affordable & Clean Energy</h1>
+      </div>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script>
+  <script src = "script-sdg.js"></script>
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL]);
+
+      // Deleting Videos
+      // Just remove the line
+
+      newVideo("Group 8",  "https://www.youtube.com/watch?v=6xPlEl6Mn5k",  "TN21");
+      newVideo("RA:LPH",  "https://www.youtube.com/watch?v=jfKk6DORZFM",  "TN23");
+      newVideo("VERDE",  "https://www.youtube.com/watch?v=fypAnob_T2w",  "TN23");
+      newVideo("Althichtics",  "https://www.youtube.com/watch?v=8euiSQlt2SA",  "TN23");
+      newVideo("Cha Ching",  "https://www.youtube.com/watch?v=g5VnUIN2YiM",  "TS21");
+      newVideo("Loving Lilac",  "https://www.youtube.com/watch?v=8x9tBcriD2s",  "TD21");
+      newVideo("Signatura",  "https://www.youtube.com/watch?v=0VFyi4bAnL4",  "TD25");
+      newVideo("Group 4",  "https://www.youtube.com/watch?v=4tQoCSKlz44",  "TW21");
+      
+      award('fypAnob_T2w', medals.champ);
+
+      applyHover();
+    }
+  </script>
+</html>
